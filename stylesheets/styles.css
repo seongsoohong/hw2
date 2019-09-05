@@ -1,0 +1,123 @@
+@font-face{
+  font-family: 'lakeshore';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-pentype'),
+      url('fonts/LAKESHOR-webfont.woff') format('woff'),
+      url('fonts/LAKESHOR-webfont.ttf') format('truetype'),
+      url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+
+}
+@font-face{
+  font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Airstream-webfont.eot');
+  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-pentype'),
+      url('fonts/Airstream-webfont.woff') format('woff'),
+      url('fonts/Airstream-webfont.ttf') format('truetype'),
+      url('fonts/Airstream-webfont.svg#lakeshore') format('svg');
+
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  background: rgb(149, 194, 215);
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-text{
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: lakeshore;
+  display: block;
+  font-size: 30px;
+
+
+}
+.main-content {
+  /* background: green; */
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+.thumbnail-title {
+  display: block;
+  margin: 0;
+  padding: 4px 10px;
+  background: rgb(96, 125, 139);
+  color: rgb(202, 238, 255);
+  font-size: 18px;
+}
+.thumbnail-item{
+min-width: 120px;
+max-width: 120px;
+
+  display: inline-block;
+  width: 120px;
+  border: 1px solid #FFFFFF;
+  border: 1px solid rgb(100%, 100%, 100%);
+  border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+.thumbnail-list{
+  /* background: yellow; */
+
+  /* list-style: none;
+
+
+  overflow-x:auto;
+  flex: 0 1 auto;
+
+  justify-content: space-between;
+  align-item: felx-center; */
+  white-space: nowrap;
+  padding: 0;
+  order: 2;
+}
+.thumbnail-image {
+  width:100%;
+  height: 1%;
+  display: block;
+}
+
+
+.detail-image {
+  width: 90%;
+  flex: 1 1 auto;
+}
+.detail-image-container {
+  /* background: pink; */
+  flex: 1 1 auto;
+  display: flex;
+}
+.detail-image-frame{
+  background: pink;
+  position: relative;
+}
+.detail-image-title {
+  /* background: skyblue; */
+  position: absolute;
+  bottom: -16px;
+  left:-25px;
+  color: white;
+  text-shadow: rgba(0,0,0,0.9) -4px 10px 6px;
+  font-size: 50px;
+  font-family: airstreamregular;
+}
+/* .thumbnail-item + .thumbnail-item {
+  margin-top: 10px;
+} */
