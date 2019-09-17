@@ -76,14 +76,15 @@ max-width: 120px;
 .thumbnail-list{
   /* background: yellow; */
 
-  /* list-style: none;
+  list-style: none;
 
 
   overflow-x:auto;
   flex: 0 1 auto;
 
   justify-content: space-between;
-  align-item: felx-center; */
+  align-items: center;
+  display: flex;
   white-space: nowrap;
   padding: 0;
   order: 2;
@@ -121,3 +122,23 @@ max-width: 120px;
 /* .thumbnail-item + .thumbnail-item {
   margin-top: 10px;
 } */
+
+@media all and (min-width:768px) {
+  /* styles go here */
+  .main-content {
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .thumbnail-list {
+    flex-direction: column;
+    order: 0;
+    margin-left: 20px;
+
+  }
+  .thumbnail-item{
+    max-width: 260px;
+  }
+  .thumbnail-item + .thumbnail-item{
+    margin-top:20px;
+  }
+}
